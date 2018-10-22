@@ -35,7 +35,7 @@ def move(board, index, player = "X")
   board[index] = player
 end
 
-#gets player's move for this return
+#gets player's move for this turn. If valid, prints board. If not valid, asks for input again.
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
