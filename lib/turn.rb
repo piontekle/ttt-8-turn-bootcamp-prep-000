@@ -25,7 +25,7 @@ def valid_move?(board, index)
   end
 end
 
-#checks if position already taken
+#checks if position already taken to be used in #valid_move?
 def position_taken?(board, index)
   if board[index] == " " || board[index] == "" || board[index] ==  nil
     return false
