@@ -12,10 +12,6 @@ def input_to_index(input)
   index = input.to_i - 1
 end
 
-def move(board, index, player = "X")
-  board[index] = player
-end
-
 #checks if valid move
 def valid_move?(board, index)
   if !position_taken?(board, index) && index.between?(0,8)
@@ -32,5 +28,10 @@ def position_taken?(board, index)
     elsif board[index] == "X" || "O"
     return true
   end
+end
+
+#adds move to the board
+def move(board, index, player = "X")
+  board[index] = player
 end
 
