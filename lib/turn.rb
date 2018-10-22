@@ -1,4 +1,4 @@
-#displays board's current state
+#displays game board's current state
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
